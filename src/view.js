@@ -2,7 +2,10 @@ export const renderItems = (data) => {
   
   console.log(data)
   // Aquí comienza tu código y puedes retornar lo que tu necesites
- 
+ const tarjetas = ""
+ for (let  i = 0; i < data.length; i++) {
+  const contenido = data [i];
+ }
   return  ` ;
   <dl itemscope itemtype="https://schema.org/Superhero">
     <img src="URL_DE_LA_IMAGEN_GENERADA" alt="Nombre del personaje" itemprop="image" />
