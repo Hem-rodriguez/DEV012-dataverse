@@ -2,16 +2,26 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>X-MAN</title>
+    <title>X-MEN</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-
   <body>
+    <header><h1 name="titulo"X-MEN></h1></header>
+    <main>
+    <div>
+       <select name="filtros" data-testid="select-filter">
+        <option value="nombre">nombre</option>
+        <option value="alineacion">alineacion</option>
+        <option value="genero">genero</option>
+        <option value="poderes">poderes</option>
+        </select>
+        <option value="asc">A - Z</option>
+        <option value="desc">Z - A</option>
+        <button data-testid="button-clear">borrar</button>
+    </div>
+    </main>
 
    <div id="root"></div>
-    <ul>
-      <li></li>
-    </ul>
    <script src="main.js" type="module"></script>
 
   </body> 

@@ -1,23 +1,26 @@
 export const renderItems = (data) => {
   
-  console.log(data)
+  //console.log(data)
   // Aquí comienza tu código y puedes retornar lo que tu necesites
- const tarjetas = ""
+ let listadeTarjetas = ""
  for (let  i = 0; i < data.length; i++) {
-  const contenido = data [i];
- }
-  return  ` ;
-  <dl itemscope itemtype="https://schema.org/Superhero">
-    <img src="URL_DE_LA_IMAGEN_GENERADA" alt="Nombre del personaje" itemprop="image" />
-    <dt>Nombre:</dt><dd itemprop="name">Nombre del personaje</dd>
-    <dt>Descripción:</dt><dd itemprop="description">Descripción del personaje.</dd>
-    <dt>Alineación:</dt><dd itemprop="alignment">Alineación del personaje (Héroe, Villano, Neutral, etc.).</dd>
-    <dt>Género:</dt><dd itemprop="gender">Género del personaje (Masculino, Femenino, etc.).</dd>
-    <dt>Poderes:</dt><dd itemprop="powers">Poderes y habilidades del personaje.</dd>
+  const content = data [i];
+ 
+   listadeTarjetas += `
+  <li class="estilo-tarjetas">
+  <dl itemscope itemtype="X-men">
+    <img class="estilo-imagen" src=${content.imageUrl}">
+    <dt>Nombre:</dt><dd itemprop="name">${content.name}</dd>
+    <dt>Descripción:</dt><dd itemprop="description">${content.shortDescription}</dd>
+    <dt>Alineación:</dt><dd itemprop="alignment">${content.facts.alignment}</dd>
+    <dt>Género:</dt><dd itemprop="gender">${content.facts.gender}</dd>
+    <dt>Poderes:</dt><dd itemprop="powers">${content.facts.powers}</dd>
   </dl>
-  `
-}; 
+  <li/>`;
+  
+  }
+  return  `<ul>${listadeTarjetas}<ul/>`;
+  
 
 
-
-
+};
