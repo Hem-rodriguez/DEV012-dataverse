@@ -9,10 +9,10 @@ export default [
     genre: "Terror",
     imageUrl: "img/carrie.jpeg", 
     facts: {
-        yearOfRelease: 1976,
+        yearOfRelease: "1976",
         director: "Brian De Palma",
-        mainActors: ["Sissy Spacek", "Piper Laurie"],
-        basedOnBook: true
+        mainActors: "Sissy Spacek, Piper Laurie",
+        basedOnBook: "yes"
       }
   },
   {
@@ -23,10 +23,10 @@ export default [
     genre: "Terror",
     imageUrl: "img/shining.jpeg",
     facts: {
-        yearOfRelease: 1980,
+        yearOfRelease: "1980",
         director: "Stanley Kubrick",
-        mainActors: ["Jack Nicholson", "Shelley Duvall", "Danny Lloyd"],
-        basedOnBook: true
+        mainActors: "Jack Nicholson, Shelley Duvall, Danny Lloyd",
+        basedOnBook: "yes"
     }
 },
 {
@@ -37,10 +37,10 @@ export default [
   genre: "Terror",
   imageUrl: "img/it.jpeg",
   facts: {
-      yearOfRelease: 2017,
+      yearOfRelease: "2017",
       director: "Andrés Muschietti",
-      mainActors: ["Bill Skarsgård", "Jaeden Martell", "Finn Wolfhard"],
-      basedOnBook: true
+      mainActors: "Bill Skarsgård, Jaeden Martell, Finn Wolfhard",
+      basedOnBook: "yes"
   }
 },
   {
@@ -51,10 +51,10 @@ export default [
     genre: "Thriller",
     imageUrl: "img/misery.jpeg",
     facts: {
-      yearOfRelease: 1990,
+      yearOfRelease: "1990",
       director: "Rob Reiner",
-      mainActors: ["Kathy Bates", "James Caan", "Richard Farnsworth"],
-      basedOnBook: true
+      mainActors: "Kathy Bates, James Caan, Richard Farnsworth",
+      basedOnBook: "yes"
     }
   },
   {
@@ -65,10 +65,10 @@ export default [
     genre: "Drama",
     imageUrl: "img/greenmile.jpeg",
     facts: {
-      yearOfRelease: 1999,
+      yearOfRelease: "1999",
       director: "Frank Darabont",
-      mainActors: ["Tom Hanks", "Michael Clarke Duncan", "David Morse"],
-      basedOnBook: true
+      mainActors: "Tom Hanks, Michael Clarke Duncan, David Morse",
+      basedOnBook: "yes"
     }
   },
   {
@@ -79,10 +79,10 @@ export default [
     genre: "Terror",
     imageUrl: "img/doctorsleep.jpeg",
     facts: {
-      yearOfRelease: 2019,
+      yearOfRelease: "2019",
       director: "Mike Flanagan",
-      mainActors: ["Ewan McGregor", "Rebecca Ferguson", "Kyliegh Curran"],
-      basedOnBook: true
+      mainActors: "Ewan McGregor, Rebecca Ferguson, Kyliegh Curran",
+      basedOnBook: "yes"
 
     }
   },
@@ -94,10 +94,10 @@ export default [
       genre: "Thriller",
       imageUrl: "img/secretwindow.jpeg",
       facts: {
-          yearOfRelease: 2004,
+          yearOfRelease: "2004",
           director: "David Koepp",
-          mainActors: ["Johnny Depp", "John Turturro", "Maria Bello"],
-          basedOnBook: true
+          mainActors: "Johnny Depp, John Turturro, Maria Bello",
+          basedOnBook: "yes"
       }
   },
   {
@@ -108,10 +108,10 @@ export default [
     genre: "Drama",
     imageUrl: "img/doloresclaiborne.jpeg",
     facts: {
-      yearOfRelease: 1995,
+      yearOfRelease: "1995",
       director: "Taylor Hackford",
-      mainActors: ["Kathy Bates", "Jennifer Jason Leigh", "David Strathairn"],
-      basedOnBook: true
+      mainActors: "Kathy Bates, Jennifer Jason Leigh, David Strathairn",
+      basedOnBook: "yes"
     }
   },
   {
@@ -122,10 +122,10 @@ export default [
     genre: "Terror",
     imageUrl: "img/petsemantary.jpeg",
     facts: {
-      yearOfRelease: 1989,
+      yearOfRelease: "1989",
       director: "Mary Lambert",
-      mainActors: ["Dale Midkiff", "Denise Crosby", "Fred Gwynne"],
-      basedOnBook: true
+      mainActors: "Dale Midkiff, Denise Crosby, Fred Gwynne",
+      basedOnBook: "yes"
     }
   },
   {
@@ -136,10 +136,10 @@ export default [
   genre: "Drama",
   imageUrl: "img/standbyme.jpeg",
   facts: {
-    yearOfRelease: 1986,
+    yearOfRelease: "1986",
     director: "Rob Reiner",
-    mainActors: ["Wil Wheaton", "River Phoenix", "Corey Feldman"],
-    basedOnBook: true
+    mainActors: "Wil Wheaton, River Phoenix, Corey Feldman",
+    basedOnBook: "yes"
   }
 },
 {
@@ -150,10 +150,10 @@ export default [
   genre: "Thriller",
   imageUrl: "img/deadzone.jpeg",
   facts: {
-    yearOfRelease: 1983,
+    yearOfRelease: "1983",
     director: "David Cronenberg",
-    mainActors: ["Christopher Walken", "Martin Sheen", "Tom Skerritt"],
-    basedOnBook: true
+    mainActors: "Christopher Walken, Martin Sheen, Tom Skerritt",
+    basedOnBook: "yes"
   }
 },
 {
@@ -164,10 +164,10 @@ export default [
   genre: "Ciencia Ficción",
   imageUrl: "img/langoliers.jpeg",
   facts: {
-    yearOfRelease: 1995,
+    yearOfRelease: "1995",
     director: "Tom Holland",
-    mainActors: ["David Morse", "Patricia Wettig", "Dean Stockwell"],
-    basedOnBook: true
+    mainActors: "David Morse, Patricia Wettig, Dean Stockwell",
+    basedOnBook: "yes"
   }
 },
 {
@@ -178,10 +178,10 @@ description: "Basada en la novela de Stephen King, 'Dreamcatcher' es un thriller
 genre: "Ciencia Ficción",
 imageUrl: "img/dreamcatcher.jpeg",
 facts: {
-  yearOfRelease: 2003,
+  yearOfRelease: "2003",
   director: "Lawrence Kasdan",
-  mainActors: ["Morgan Freeman", "Thomas Jane", "Jason Lee"],
-  basedOnBook: true
+  mainActors: "Morgan Freeman, Thomas Jane, Jason Lee",
+  basedOnBook: "yes"
 }
 },
 {
@@ -192,10 +192,10 @@ facts: {
   genre: "Terror",
   imageUrl: "img/rosered.jpeg",
   facts: {
-    yearOfRelease: 2002,
+    yearOfRelease: "2002",
     director: "Craig R. Baxley",
-    mainActors: ["Nancy Travis", "Matt Keeslar", "David Dukes"],
-    basedOnScript: true
+    mainActors: "Nancy Travis, Matt Keeslar, David Dukes",
+    basedOnScript: "yes"
   }
 },
 {
@@ -206,10 +206,10 @@ facts: {
   genre: "Ciencia Ficción",
   imageUrl: "img/firestarter.jpeg",
   facts: {
-    yearOfRelease: 1984,
+    yearOfRelease: "1984",
     director: "Mark L. Lester",
-    mainActors: ["Drew Barrymore", "David Keith", "George C. Scott"],
-    basedOnBook: true
+    mainActors: "Drew Barrymore, David Keith, George C. Scott",
+    basedOnBook: "yes"
   }
 },
 {
@@ -220,10 +220,10 @@ facts: {
   genre: "Thriller",
   imageUrl: "img/needfulthings.jpeg",
   facts: {
-    yearOfRelease: 1993,
+    yearOfRelease: "1993",
     director: "Fraser C. Heston",
-    mainActors: ["Max von Sydow", "Ed Harris", "Bonnie Bedelia"],
-    basedOnBook: true
+    mainActors: "Max von Sydow, Ed Harris, Bonnie Bedelia",
+    basedOnBook: "yes"
   }
 },
 {
@@ -234,10 +234,10 @@ facts: {
   genre: "Ciencia Ficción",
   imageUrl: "img/goldenyears.jpeg",
   facts: {
-    yearOfRelease: 1991,
+    yearOfRelease: "1991",
     director: "David Carson",
-    mainActors: ["Keith Szarabajka", "Frances Sternhagen", "Felicity Huffman"],
-    basedOnScript: true
+    mainActors: "Keith Szarabajka, Frances Sternhagen, Felicity Huffman",
+    basedOnScript: "yes"
   }
 },
 {
@@ -248,10 +248,10 @@ facts: {
   genre: "Terror",
   imageUrl: "img/graveyardshift.jpeg",
   facts: {
-    yearOfRelease: 1990,
+    yearOfRelease: "1990",
     director: "Ralph S. Singleton",
-    mainActors: ["David Andrews", "Kelly Wolf", "Stephen Macht"],
-    basedOnStory: true
+    mainActors: "David Andrews, Kelly Wolf, Stephen Macht",
+    basedOnStory: "yes"
   }
 },
 {
@@ -262,10 +262,10 @@ facts: {
   genre: "Terror",
   imageUrl: "img/childrencorn.jpeg",
   facts: {
-    yearOfRelease: 1984,
+    yearOfRelease: "1984",
     director: "Fritz Kiersch",
-    mainActors: ["Peter Horton", "Linda Hamilton", "R.G. Armstrong"],
-    basedOnStory: true
+    mainActors: "Peter Horton, Linda Hamilton, R.G. Armstrong",
+    basedOnStory: "yes"
   }
 },
 {
@@ -276,10 +276,10 @@ facts: {
   genre: "Drama",
   imageUrl: "img/Shawshank.jpeg",
   facts: {
-      yearOfRelease: 1994,
+      yearOfRelease: "1994",
       director: "Frank Darabont",
-      mainActors: ["Tim Robbins", "Morgan Freeman"],
-      basedOnBook: true
+      mainActors: "Tim Robbins, Morgan Freeman",
+      basedOnBook: "yes"
   }
 },
 {
@@ -290,10 +290,10 @@ facts: {
   genre: "Terror",
   imageUrl: "img/1408.jpeg",
   facts: {
-      yearOfRelease: 2007,
+      yearOfRelease: "2007",
       director: "Mikael Håfström",
-      mainActors: ["John Cusack", "Samuel L. Jackson"],
-      basedOnStory: true
+      mainActors: "John Cusack, Samuel L. Jackson",
+      basedOnStory: "yes"
   }
 },
 {
@@ -304,10 +304,10 @@ facts: {
   genre: "Terror",
   imageUrl: "img/TheMist.jpeg",
   facts: {
-      yearOfRelease: 2007,
+      yearOfRelease: "2007",
       director: "Frank Darabont",
-      mainActors: ["Thomas Jane", "Marcia Gay Harden"],
-      basedOnStory: true
+      mainActors: "Thomas Jane, Marcia Gay Harden",
+      basedOnStory: "yes"
   }
 },
 {
@@ -318,10 +318,10 @@ facts: {
   genre: "Terror",
   imageUrl: "img/geraldsgame.jpeg",
   facts: {
-      yearOfRelease: 2017,
+      yearOfRelease: "2017",
       director: "Mike Flanagan",
-      mainActors: ["Carla Gugino", "Bruce Greenwood"],
-      basedOnBook: true
+      mainActors: "Carla Gugino, Bruce Greenwood",
+      basedOnBook: "yes",
   }
 },
 {
@@ -332,10 +332,10 @@ facts: {
   genre: "Terror",
   imageUrl: "img/cujo.jpeg",
   facts: {
-      yearOfRelease: 1983,
+      yearOfRelease: "1983",
       director: "Lewis Teague",
-      mainActors: ["Dee Wallace", "Danny Pintauro"],
-      basedOnBook: true
+      mainActors: "Dee Wallace, Danny Pintauro",
+      basedOnBook: "yes"
   }
 },
 ]
