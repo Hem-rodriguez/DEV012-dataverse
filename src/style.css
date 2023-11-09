@@ -1,0 +1,159 @@
+
+/* Estilos para el cuerpo de la página */
+body {
+   
+    background-color: rgb(34, 34, 34);
+    background-image: linear-gradient(rgba(63, 65, 70, 0.75), rgba(63, 65, 70, 0.75)), url(img/fondo.jpeg);
+}
+
+/* Estilos generales para los elementos div */
+div {
+    border-style: double;
+    border-width: 0;
+    margin: 0;
+    text-align: justify;
+    align-items: center;
+}
+
+/* Estilos para el título */
+h1 {
+    color: rgb(209, 0, 0);
+    background-color: black;
+    text-align: center;
+    font-family: western;
+    font-size: 40px;
+}
+
+/* Estilos para los select (filtros) */
+select {
+    color: rgb(250, 247, 247);
+    background-color: black;
+    text-align: center;
+    height: 30px;
+    width: 150px;
+    border-radius: 2rem;
+    align-items: center;
+}
+
+/* Estilos para la estadística */
+#estadistica {
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 1rem;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: initial;
+    margin: auto;
+}
+
+/* Estilos para los botones */
+button {
+    color: rgb(255, 255, 255);
+    background-color: black;
+    height: 30px;
+    width: 150px;
+    border-radius: 2rem;
+    align-items: center;
+}
+
+/* Estilos para los elementos dt (nombres de películas) */
+dt {
+    color: rgb(209, 0, 0);
+    background-color: black;
+    background-size: auto;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+    justify-content: center;
+}
+
+/* Estilos para los elementos dd (géneros de películas) */
+dd {
+    color: rgb(250, 250, 250);
+    background-color: black;
+    background-size: auto;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+/* Estilos para las imágenes */
+img {
+    width: 250px;
+    height: 350px;
+    flex: 1;
+    flex-grow: 1px;
+    flex-basis: 200px;
+    overflow: hidden;
+    filter: grayscale(1);
+    transition: 0.5s;
+}
+
+/* Estilos para las imágenes al pasar el mouse */
+img:hover {
+    flex: 2;
+    filter: grayscale(0);
+}
+
+/* Estilos para el elemento <ul> con id "root" */
+#root {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    gap: 24px;
+    justify-content: center;
+    font-size: medium;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+/* Estilos para el encabezado y pie de página */
+header {
+    display: block;
+}
+
+footer {
+    color: aliceblue;
+}
+
+/* Estilos para la clase ".peliculas-grid" */
+.peliculas-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Estilos para la clase ".estilo-tarjetas" */
+.estilo-tarjetas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    gap: 24px;
+}
+
+/* Estilos para el elemento <ul> */
+ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    gap: 24px;
+}
+
+/* Aplicar flexbox para colocar los elementos en línea y centrarlos verticalmente */
+main {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    
+  }
+  
+#Genero {
+    color: rgb(236, 236, 17);
+}

@@ -1,289 +1,341 @@
 export default [
-  [
-    {
-      id: "bestia",
-      name: "Bestia",
-      shortDescription: "Mutante con habilidades físicas sobrehumanas y un intelecto genio.",
-      description: "Bestia es conocido por su fuerza sobrehumana, agilidad y un intelecto brillante. Ha sido un valioso miembro de los X-Men.",
-      imageUrl: "URL_DE_LA_IMAGEN_BESTIA",
-      facts: {
-        alignment: "Héroe (X-Men)",
-        gender: "Masculino",
-        powers: "Habilidades físicas sobrehumanas, inteligencia genial."
+  /*aqi coloque toda la data creada con IA y coloque las imagenes que almacene en una carpeta
+  aqui mismo en visual*/
+  {
+   id: "carrie-1976",
+    name: "Carrie",
+    shortDescription: "Una joven con poderes telequinéticos se venga de sus acosadores.",
+    description: "Carrie es un icónico thriller de terror de 1976, basado en la novela de Stephen King. Dirigida por Brian De Palma, la película narra la historia de Carrie White, una joven con poderes telequinéticos que sufre el acoso constante de sus compañeros de escuela. La trama se centra en su venganza después de un desgarrador incidente en su baile de graduación. La actuación destacada de Sissy Spacek en el papel principal y la dirección de De Palma contribuyen a la atmósfera tensa y aterradora de la película. Carrie es un clásico del cine de terror que explora temas de alienación y poderes sobrenaturales.",
+    genre: "Terror",
+    imageUrl: "img/carrie.jpeg", 
+    facts: {
+        yearOfRelease: 1976,
+        director: "Brian De Palma",
+        mainActors: ["Sissy Spacek", "Piper Laurie"],
+        basedOnBook: true
       }
-    },
-    {
-      id: "bishop",
-      name: "Bishop",
-      shortDescription: "Mutante capaz de absorber y redirigir la energía.",
-      description: "Bishop posee la capacidad única de absorber la energía y redirigirla como poderosos ataques. Es un defensor de la paz entre mutantes y humanos.",
-      imageUrl: "URL_DE_LA_IMAGEN_BISHOP",
-      facts: {
-        alignment: "Héroe (X-Men)",
-        gender: "Masculino",
-        powers: "Absorción y redirección de energía."
-      }
-    },
-    {
-      id: "blink",
-      name: "Blink",
-      shortDescription: "Mutante con la capacidad de crear portales teleportadores.",
-      description: "Blink es conocida por su habilidad para abrir portales teleportadores, permitiendo viajes instantáneos a través de distancias.",
-      imageUrl: "URL_DE_LA_IMAGEN_BLINK",
-      facts: {
-        alignment: "Héroe (X-Men)",
-        gender: "Femenino",
-        powers: "Creación de portales teleportadores."
-      }
-    },
-    {
-      id: "bolivar-trask",
-      name: "Bolivar Trask",
-      shortDescription: "Científico y creador de los Centinelas, máquinas diseñadas para cazar mutantes.",
-      description: "Bolivar Trask es un científico obsesionado con la creación de los Centinelas, máquinas destinadas a contener a los mutantes. Su papel es complejo y a menudo antagónico.",
-      imageUrl: "URL_DE_LA_IMAGEN_TRASK",
-      facts: {
-        alignment: "Neutral (Antagonista de los mutantes en algunas historias)",
-        gender: "Masculino"
-      }
-    },
-    {
-      id: "centinela",
-      name: "Centinela",
-      shortDescription: "Máquinas gigantes creadas para cazar y contener mutantes.",
-      description: "Los Centinelas son máquinas gigantes creadas por Bolivar Trask con el propósito de cazar y contener a los mutantes. Son un peligro constante en el mundo de los X-Men.",
-      imageUrl: "URL_DE_LA_IMAGEN_CENTINELA",
-      facts: {
-        alignment: "Neutral (Instrumento de caza de mutantes)",
-        gender: "N/A (Máquinas)"
-      }
-    },
-    {
-      id: "coloso",
-      name: "Coloso",
-      shortDescription: "Puede convertir su cuerpo en acero orgánico.",
-      description: "Coloso tiene la habilidad única de transformar su cuerpo en acero orgánico, proporcionando una resistencia y fuerza excepcionales.",
-      imageUrl: "URL_DE_LA_IMAGEN_COLOSO",
-      facts: {
-        alignment: "Héroe (X-Men)",
-        gender: "Masculino",
-        powers: "Transformación en acero orgánico."
-      }
-    },
-    {
-      id: "havok",
-      name: "Havok",
-      shortDescription: "Hermano de Cíclope con la capacidad de controlar la energía cósmica.",
-      description: "Havok, hermano de Cíclope, puede manipular y controlar la energía cósmica para diversos fines, convirtiéndose en un valioso miembro de los X-Men.",
-      imageUrl: "URL_DE_LA_IMAGEN_HAVOK",
-      facts: {
-        alignment: "Héroe (X-Men)",
-        gender: "Masculino",
-        powers: "Control de la energía cósmica."
-      }
-    },
-    {
-      id: "iceman",
-      name: "Iceman",
-      shortDescription: "Puede crear hielo y bajar la temperatura a su alrededor.",
-      description: "Iceman tiene el poder de manipular el hielo, creando estructuras heladas y reduciendo la temperatura en su entorno.",
-      imageUrl: "URL_DE_LA_IMAGEN_ICEMAN",
-      facts: {
-        alignment: "Héroe (X-Men)",
-        gender: "Masculino",
-        powers: "Manipulación de hielo."
-      }
-    },
-    {
-      id: "kitty-pryde",
-      name: "Kitty Pryde",
-      shortDescription: "Puede atravesar objetos sólidos y es experta en computadoras.",
-      description: "Kitty Pryde, también conocida como Shadowcat, tiene la habilidad única de atravesar objetos sólidos y es una experta en sistemas informáticos.",
-      imageUrl: "URL_DE_LA_IMAGEN_KITTY_PRYDE",
-      facts: {
-        alignment: "Héroe (X-Men)",
-        gender: "Femenino",
-        powers: "Fase a través de objetos sólidos."
-      }
-    },
-    {
-      id: "magneto",
-      name: "Magneto",
-      shortDescription: "Maestro del magnetismo y líder de la Hermandad de Mutantes.",
-      description: "Magneto es un poderoso mutante con la capacidad de controlar el magnetismo. A veces líder de la Hermandad de Mutantes, su relación con los X-Men es compleja.",
-      imageUrl: "URL_DE_LA_IMAGEN_MAGNETO",
-      facts: {
-        alignment: "Villano (En algunas historias)",
-        gender: "Masculino",
-        powers: "Control del magnetismo."
-      }
-    },
-    {
-      id: "gambito",
-      name: "Gambito",
-      shortDescription: "Capaz de cargar objetos con energía explosiva y experto en combate.",
-      description: "Gambito posee la habilidad de cargar objetos con energía explosiva y es un hábil luchador cuerpo a cuerpo. Es un valioso miembro de los X-Men.",
-      imageUrl: "URL_DE_LA_IMAGEN_GAMBITO",
-      facts: {
-        alignment: "Héroe (X-Men)",
-        gender: "Masculino",
-        powers: "Carga explosiva de objetos."
-      }
-    },
-    {
-      id: "jean-grey-mystique",
-      name: "Jean Grey / Mystique",
-      shortDescription: "Jean Grey es una poderosa telepata y telequinética, Mystique puede cambiar de forma.",
-      description: "Jean Grey es conocida por su poder telepático y telequinético, mientras que Mystique tiene la capacidad única de cambiar su apariencia física a voluntad.",
-      imageUrl: "URL_DE_LA_IMAGEN_JEAN_GREY_MYSTIQUE",
-      facts: {
-        alignment: "Héroe (Jean Grey), Neutral (Mystique)",
-        gender: "Femenino (Jean Grey), Femenino (Mystique)",
-        powers: "Telepatía y telequinesis (Jean Grey), Transformación de forma (Mystique)."
-      }
-    },
-    {
-      id: "profesor-x",
-      name: "Profesor X",
-      shortDescription: "Líder de los X-Men y poderoso telepata.",
-      description: "Profesor X es el fundador y líder de los X-Men, con habilidades telepáticas extraordinarias. Su visión es unir a mutantes y humanos en armonía.",
-      imageUrl: "URL_DE_LA_IMAGEN_PROFESOR_X",
-      facts: {
-        alignment: "Héroe (Líder de los X-Men)",
-        gender: "Masculino",
-        powers: "Telepatía."
-      }
-    },
-    {
-      id: "quicksilver",
-      name: "Quicksilver",
-      shortDescription: "Mutante con supervelocidad.",
-      description: "Quicksilver posee la capacidad de moverse a velocidades increíbles, superando cualquier límite humano. Es un activo miembro de los X-Men.",
-      imageUrl: "URL_DE_LA_IMAGEN_QUICKSILVER",
-      facts: {
-        alignment: "Héroe (X-Men)",
-        gender: "Masculino",
-        powers: "Supervelocidad."
-      }
-    },
-    {
-      id: "sunspot",
-      name: "Sunspot",
-      shortDescription: "Puede absorber y canalizar la energía solar para aumentar su fuerza.",
-      description: "Sunspot tiene la capacidad de absorber la energía solar y canalizarla para aumentar su fuerza física. Es un miembro valioso de los X-Men.",
-      imageUrl: "URL_DE_LA_IMAGEN_SUNSPOT",
-      facts: {
-        alignment: "Héroe (X-Men)",
-        gender: "Masculino",
-        powers: "Absorción y canalización de energía solar."
-      }
-    },
-    {
-      id: "toad",
-      name: "Toad",
-      shortDescription: "Mutante con habilidades físicas mejoradas, incluida una lengua prensil.",
-      description: "Toad posee habilidades físicas mejoradas, incluida una lengua prensil que utiliza en combate. Aunque ha sido un antagonista, su historia es compleja.",
-      imageUrl: "URL_DE_LA_IMAGEN_TOAD",
-      facts: {
-        alignment: "Villano (En algunas historias)",
-        gender: "Masculino",
-        powers: "Habilidades físicas mejoradas."
-      }
-    },
-    {
-      id: "tormenta",
-      name: "Tormenta",
-      shortDescription: "Controla el clima y es una de las líderes de los X-Men.",
-      description: "Tormenta tiene la capacidad de controlar y manipular el clima, y ha sido una líder destacada en los X-Men. Su presencia es fundamental en el equipo.",
-      imageUrl: "URL_DE_LA_IMAGEN_TORMENTA",
-      facts: {
-        alignment: "Héroe (X-Men)",
-        gender: "Femenino",
-        powers: "Control del clima."
-      }
-    },
-    {
-      id: "warpath",
-      name: "Warpath",
-      shortDescription: "Mutante con habilidades físicas mejoradas y habilidad de vuelo.",
-      description: "Warpath posee habilidades físicas mejoradas y la capacidad de volar, convirtiéndose en un formidable miembro de los X-Men.",
-      imageUrl: "URL_DE_LA_IMAGEN_WARPATH",
-      facts: {
-        alignment: "Héroe (X-Men)",
-        gender: "Masculino",
-        powers: "Habilidades físicas mejoradas, vuelo."
-      }
-    },
-    {
-      id: "william-stryker",
-      name: "William Stryker",
-      shortDescription: "Humano, militar y líder anti-mutante.",
-      description: "William Stryker es un líder militar anti-mutante que ve a los mutantes como una amenaza. Su papel a menudo lo coloca en conflicto con los X-Men.",
-      imageUrl: "URL_DE_LA_IMAGEN_STRYKER",
-      facts: {
-        alignment: "Villano (En algunas historias)",
-        gender: "Masculino"
-      }
-    },
-    {
-      id: "wolverine",
-      name: "Wolverine",
-      shortDescription: "Tiene garras retráctiles y sentidos agudos.",
-      description: "Wolverine, también conocido como Logan, es conocido por sus garras retráctiles, sentidos agudos y habilidades regenerativas. Es un miembro fundamental de los X-Men.",
-      imageUrl: "URL_DE_LA_IMAGEN_WOLVERINE",
-      facts: {
-        alignment: "Héroe (X-Men)",
-        gender: "Masculino",
-        powers: "Garras retráctiles, sentidos agudos."
-      }
-    },
-    {
-      id: "emma-frost",
-      name: "Emma Frost",
-      shortDescription: "Telepata y antigua villana convertida en X-Men.",
-      description: "Emma Frost es una poderosa telepata que ha pasado de ser una villana a ser una valiosa miembro de los X-Men. Su habilidad telepática es inigualable.",
-      imageUrl: "URL_DE_LA_IMAGEN_EMMA_FROST",
-      facts: {
-        alignment: "Héroe (X-Men)",
-        gender: "Femenino",
-        powers: "Telepatía."
-      }
-    },
-    {
-      id: "sunspot-2",
-      name: "Sunspot",
-      shortDescription: "Puede absorber y canalizar la energía solar para aumentar su fuerza.",
-      description: "Sunspot tiene la capacidad de absorber la energía solar y canalizarla para aumentar su fuerza física. Es un miembro valioso de los X-Men.",
-      imageUrl: "URL_DE_LA_IMAGEN_SUNSPOT_2",
-      facts: {
-        alignment: "Héroe (X-Men)",
-        gender: "Masculino",
-        powers: "Absorción y canalización de energía solar."
-      }
-    },
-    {
-      id: "nightcrawler",
-      name: "Nightcrawler",
-      shortDescription: "Puede teletransportarse y tiene una apariencia azul y cola.",
-      description: "Nightcrawler tiene la habilidad de teletransportarse a cualquier lugar que pueda visualizar. Su apariencia azul y cola lo hacen inconfundible.",
-      imageUrl: "URL_DE_LA_IMAGEN_NIGHTCRAWLER",
-      facts: {
-        alignment: "Héroe (X-Men)",
-        gender: "Masculino",
-        powers: "Teletransportación."
-      }
-    },
-    {
-      id: "mystique",
-      name: "Mystique",
-      shortDescription: "Mystique es una mutante con la capacidad única de cambiar su apariencia física.",
-      description: "Mystique es conocida por su habilidad para cambiar su forma física a voluntad. Su agilidad y habilidades la convierten en una oponente formidable.",
-      imageUrl: "URL_DE_LA_IMAGEN_MYSTIQUE",
-      facts: {
-        alignment: "Neutral",
-        gender: "Femenino",
-        powers: "Transformación de forma, agilidad sobrehumana."
-      }
+  },
+  {
+    id: "the-shining-1980",
+    name: "The Shining",
+    shortDescription: "Un escritor enloquece en un hotel aislado durante el invierno.",
+    description: "The Shining (1980), dirigida por Stanley Kubrick y basada en la novela de Stephen King, es un icónico thriller de terror. La película sigue a Jack Torrance, interpretado por Jack Nicholson, quien acepta un trabajo de cuidador de un hotel aislado durante el invierno. A medida que la soledad y el aislamiento lo consumen, su cordura se desmorona, y eventos paranormales aterradores acechan a su familia. Con su atmósfera inquietante, actuaciones impactantes y una trama llena de misterio, The Shining es un clásico del cine de terror que explora la locura y el aislamiento de manera magistral.",
+    genre: "Terror",
+    imageUrl: "img/shining.jpeg",
+    facts: {
+        yearOfRelease: 1980,
+        director: "Stanley Kubrick",
+        mainActors: ["Jack Nicholson", "Shelley Duvall", "Danny Lloyd"],
+        basedOnBook: true
     }
-  ]
+},
+{
+  id: "it-2017",
+  name: "It",
+  shortDescription: "Un aterrador payaso aterroriza a un pequeño pueblo.",
+  description: "Basada en la novela de Stephen King, 'It' es un thriller de terror que sigue la historia de un aterrador payaso que aterroriza a un pequeño pueblo y un grupo de niños que se enfrentan a él.",
+  genre: "Terror",
+  imageUrl: "img/it.jpeg",
+  facts: {
+      yearOfRelease: 2017,
+      director: "Andrés Muschietti",
+      mainActors: ["Bill Skarsgård", "Jaeden Martell", "Finn Wolfhard"],
+      basedOnBook: true
+  }
+},
+  {
+    id: "misery-1990",
+    name: "Misery",
+    shortDescription: "Una escritora es secuestrada por su fan número uno.",
+    description: "Basada en la novela de Stephen King, 'Misery' es un thriller psicológico que sigue la pesadilla de una escritora secuestrada por su fan obsesivo.",
+    genre: "Thriller",
+    imageUrl: "img/misery.jpeg",
+    facts: {
+      yearOfRelease: 1990,
+      director: "Rob Reiner",
+      mainActors: ["Kathy Bates", "James Caan", "Richard Farnsworth"],
+      basedOnBook: true
+    }
+  },
+  {
+    id: "thegreenmile-1999",
+    name: "The Green Mile",
+    shortDescription: "Un guardia de prisión descubre a un prisionero con habilidades sobrenaturales.",
+    description: "Basada en la novela de Stephen King, 'The Green Mile' es un drama sobrenatural que sigue la vida de un prisionero en el corredor de la muerte con habilidades milagrosas.",
+    genre: "Drama",
+    imageUrl: "img/greenmile.jpeg",
+    facts: {
+      yearOfRelease: 1999,
+      director: "Frank Darabont",
+      mainActors: ["Tom Hanks", "Michael Clarke Duncan", "David Morse"],
+      basedOnBook: true
+    }
+  },
+  {
+    id: "doctor-sleep-2019",
+    name: "Doctor Sleep",
+    shortDescription: "Una secuela de 'The Shining', sigue a Danny Torrance en la adultez.",
+    description: "Basada en la novela de Stephen King, 'Doctor Sleep' es una secuela de 'The Shining' que sigue la vida adulta de Danny Torrance y su encuentro con un grupo de vampiros psíquicos.",
+    genre: "Terror",
+    imageUrl: "img/doctorsleep.jpeg",
+    facts: {
+      yearOfRelease: 2019,
+      director: "Mike Flanagan",
+      mainActors: ["Ewan McGregor", "Rebecca Ferguson", "Kyliegh Curran"],
+      basedOnBook: true
+
+    }
+  },
+    {
+      id: "secret-window-2004",
+      name: "Secret Window",
+      shortDescription: "Un escritor en busca de tranquilidad se enfrenta a un acosador obsesionado.",
+      description: "Basada en la novela de Stephen King, 'Secret Window' es un thriller psicológico que sigue la historia de un escritor en busca de tranquilidad que se enfrenta a un acosador obsesionado.",
+      genre: "Thriller",
+      imageUrl: "img/secretwindow.jpeg",
+      facts: {
+          yearOfRelease: 2004,
+          director: "David Koepp",
+          mainActors: ["Johnny Depp", "John Turturro", "Maria Bello"],
+          basedOnBook: true
+      }
+  },
+  {
+    id: "dolores-claiborne-1995",
+    name: "Dolores Claiborne",
+    shortDescription: "Una mujer es acusada de asesinar a su empleadora.",
+    description: "Basada en la novela de Stephen King, 'Dolores Claiborne' es un drama criminal que narra la historia de una mujer acusada de asesinato.",
+    genre: "Drama",
+    imageUrl: "img/doloresclaiborne.jpeg",
+    facts: {
+      yearOfRelease: 1995,
+      director: "Taylor Hackford",
+      mainActors: ["Kathy Bates", "Jennifer Jason Leigh", "David Strathairn"],
+      basedOnBook: true
+    }
+  },
+  {
+    id: "pet-sematary-1989",
+    name: "Pet Sematary",
+    shortDescription: "Un cementerio de mascotas tiene poderes oscuros.",
+    description: "Basada en la novela de Stephen King, 'Pet Sematary' es una historia de terror sobre un cementerio de mascotas que resucita a los muertos con consecuencias horribles.",
+    genre: "Terror",
+    imageUrl: "img/petsemantary.jpeg",
+    facts: {
+      yearOfRelease: 1989,
+      director: "Mary Lambert",
+      mainActors: ["Dale Midkiff", "Denise Crosby", "Fred Gwynne"],
+      basedOnBook: true
+    }
+  },
+  {
+  id: "stand-by-me-1986",
+  name: "Stand by Me",
+  shortDescription: "Un grupo de amigos emprende un viaje para encontrar el cuerpo de un niño desaparecido.",
+  description: "Basada en la novela de Stephen King, 'Stand by Me' es un conmovedor drama sobre la amistad y la aventura de un grupo de niños en busca del cuerpo de un niño desaparecido.",
+  genre: "Drama",
+  imageUrl: "img/standbyme.jpeg",
+  facts: {
+    yearOfRelease: 1986,
+    director: "Rob Reiner",
+    mainActors: ["Wil Wheaton", "River Phoenix", "Corey Feldman"],
+    basedOnBook: true
+  }
+},
+{
+  id: "thedeadzone-1983",
+  name: "The Dead Zone",
+  shortDescription: "Un hombre adquiere la capacidad de ver el futuro, pero a un alto costo.",
+  description: "Basada en la novela de Stephen King, 'The Dead Zone' es un thriller sobrenatural que sigue a un hombre que adquiere la habilidad de ver el futuro, pero descubre que tiene un alto costo personal.",
+  genre: "Thriller",
+  imageUrl: "img/deadzone.jpeg",
+  facts: {
+    yearOfRelease: 1983,
+    director: "David Cronenberg",
+    mainActors: ["Christopher Walken", "Martin Sheen", "Tom Skerritt"],
+    basedOnBook: true
+  }
+},
+{
+  id: "thelangoliers-1995",
+  name: "The Langoliers",
+  shortDescription: "Los pasajeros de un avión quedan atrapados en una realidad aterradora.",
+  description: "Basada en la novela de Stephen King, 'The Langoliers' es un thriller de ciencia ficción que sigue a los pasajeros de un avión que quedan atrapados en una realidad aterradora.",
+  genre: "Ciencia Ficción",
+  imageUrl: "img/langoliers.jpeg",
+  facts: {
+    yearOfRelease: 1995,
+    director: "Tom Holland",
+    mainActors: ["David Morse", "Patricia Wettig", "Dean Stockwell"],
+    basedOnBook: true
+  }
+},
+{
+id: "dreamcatcher-2003",
+name: "Dreamcatcher",
+shortDescription: "Amigos con poderes paranormales enfrentan una invasión alienígena.",
+description: "Basada en la novela de Stephen King, 'Dreamcatcher' es un thriller de ciencia ficción que sigue a un grupo de amigos con poderes paranormales mientras enfrentan una invasión alienígena.",
+genre: "Ciencia Ficción",
+imageUrl: "img/dreamcatcher.jpeg",
+facts: {
+  yearOfRelease: 2003,
+  director: "Lawrence Kasdan",
+  mainActors: ["Morgan Freeman", "Thomas Jane", "Jason Lee"],
+  basedOnBook: true
+}
+},
+{
+  id: "rose-red-2002",
+  name: "Rose Red",
+  shortDescription: "Una profesora investiga una mansión embrujada.",
+  description: "Basada en el guion de Stephen King, 'Rose Red' es una miniserie de terror que sigue a una profesora y un equipo de investigadores que exploran una mansión embrujada.",
+  genre: "Terror",
+  imageUrl: "img/rosered.jpeg",
+  facts: {
+    yearOfRelease: 2002,
+    director: "Craig R. Baxley",
+    mainActors: ["Nancy Travis", "Matt Keeslar", "David Dukes"],
+    basedOnScript: true
+  }
+},
+{
+  id: "firestarter-1984",
+  name: "Firestarter",
+  shortDescription: "Una niña con habilidades pirocinéticas escapa de una organización gubernamental.",
+  description: "Basada en la novela de Stephen King, 'Firestarter' es un thriller de ciencia ficción que sigue la historia de una niña con habilidades pirocinéticas perseguida por una organización gubernamental.",
+  genre: "Ciencia Ficción",
+  imageUrl: "img/firestarter.jpeg",
+  facts: {
+    yearOfRelease: 1984,
+    director: "Mark L. Lester",
+    mainActors: ["Drew Barrymore", "David Keith", "George C. Scott"],
+    basedOnBook: true
+  }
+},
+{
+  id: "needful-things-1993",
+  name: "Needful Things",
+  shortDescription: "Un misterioso comerciante causa caos en una pequeña ciudad.",
+  description: "Basada en la novela de Stephen King, 'Needful Things' es un thriller que sigue el caos desatado por un comerciante misterioso en una pequeña ciudad.",
+  genre: "Thriller",
+  imageUrl: "img/needfulthings.jpeg",
+  facts: {
+    yearOfRelease: 1993,
+    director: "Fraser C. Heston",
+    mainActors: ["Max von Sydow", "Ed Harris", "Bonnie Bedelia"],
+    basedOnBook: true
+  }
+},
+{
+  id: "golden-years-1991",
+  name: "Golden Years",
+  shortDescription: "Un hombre adquiere habilidades sobrenaturales tras un accidente de laboratorio.",
+  description: "Basada en el guion de Stephen King, 'Golden Years' es una miniserie de ciencia ficción que sigue a un hombre que adquiere habilidades sobrenaturales después de un accidente de laboratorio.",
+  genre: "Ciencia Ficción",
+  imageUrl: "img/goldenyears.jpeg",
+  facts: {
+    yearOfRelease: 1991,
+    director: "David Carson",
+    mainActors: ["Keith Szarabajka", "Frances Sternhagen", "Felicity Huffman"],
+    basedOnScript: true
+  }
+},
+{
+  id: "graveyard-shift-1990",
+  name: "Graveyard Shift",
+  shortDescription: "Trabajadores de un molino enfrentan horrores en el turno de noche.",
+  description: "Basada en el cuento de Stephen King, 'Graveyard Shift' es un thriller de terror que sigue a los trabajadores de un molino que enfrentan horrores durante el turno de noche.",
+  genre: "Terror",
+  imageUrl: "img/graveyardshift.jpeg",
+  facts: {
+    yearOfRelease: 1990,
+    director: "Ralph S. Singleton",
+    mainActors: ["David Andrews", "Kelly Wolf", "Stephen Macht"],
+    basedOnStory: true
+  }
+},
+{
+  id: "children-of-the-corn-1984",
+  name: "Children of the Corn",
+  shortDescription: "Un pueblo de niños adora a una entidad maligna.",
+  description: "Basada en el cuento de Stephen King, 'Children of the Corn' es un thriller de terror que sigue a un pueblo de niños que adoran a una entidad maligna.",
+  genre: "Terror",
+  imageUrl: "img/childrencorn.jpeg",
+  facts: {
+    yearOfRelease: 1984,
+    director: "Fritz Kiersch",
+    mainActors: ["Peter Horton", "Linda Hamilton", "R.G. Armstrong"],
+    basedOnStory: true
+  }
+},
+{
+  id: "the-shawshank-redemption-1994",
+  name: "The Shawshank Redemption",
+  shortDescription: "Un hombre inocente lucha por su libertad en prisión.",
+  description: "Basada en la novela de Stephen King, 'The Shawshank Redemption' es un drama carcelario que narra la historia de un hombre inocente que lucha por su libertad en prisión.",
+  genre: "Drama",
+  imageUrl: "img/Shawshank.jpeg",
+  facts: {
+      yearOfRelease: 1994,
+      director: "Frank Darabont",
+      mainActors: ["Tim Robbins", "Morgan Freeman"],
+      basedOnBook: true
+  }
+},
+{
+  id: "1408-2007",
+  name: "1408",
+  shortDescription: "Un escritor investiga habitaciones de hotel embrujadas y se enfrenta a terrores sobrenaturales.",
+  description: "Basada en el relato corto de Stephen King, '1408' es un thriller sobrenatural que sigue a un escritor que investiga habitaciones de hotel embrujadas y se enfrenta a terrores sobrenaturales.",
+  genre: "Terror",
+  imageUrl: "img/1408.jpeg",
+  facts: {
+      yearOfRelease: 2007,
+      director: "Mikael Håfström",
+      mainActors: ["John Cusack", "Samuel L. Jackson"],
+      basedOnStory: true
+  }
+},
+{
+  id: "the-mist-2007",
+  name: "The Mist",
+  shortDescription: "Los residentes de un pueblo enfrentan horrores sobrenaturales en medio de una misteriosa niebla.",
+  description: "Basada en el relato corto de Stephen King, 'The Mist' es un thriller de terror que sigue a los residentes de un pueblo que enfrentan horrores sobrenaturales en medio de una misteriosa niebla.",
+  genre: "Terror",
+  imageUrl: "img/TheMist.jpeg",
+  facts: {
+      yearOfRelease: 2007,
+      director: "Frank Darabont",
+      mainActors: ["Thomas Jane", "Marcia Gay Harden"],
+      basedOnStory: true
+  }
+},
+{
+  id: "geralds-game-2017",
+  name: "Gerald's Game",
+  shortDescription: "Una mujer lucha por sobrevivir esposada a una cama en una casa aislada.",
+  description: "Basada en la novela de Stephen King, 'Gerald's Game' es un thriller psicológico que sigue a una mujer que lucha por sobrevivir esposada a una cama en una casa aislada.",
+  genre: "Terror",
+  imageUrl: "img/geraldsgame.jpeg",
+  facts: {
+      yearOfRelease: 2017,
+      director: "Mike Flanagan",
+      mainActors: ["Carla Gugino", "Bruce Greenwood"],
+      basedOnBook: true
+  }
+},
+{
+  id: "cujo-1983",
+  name: "Cujo",
+  shortDescription: "Un perro san bernardo se convierte en una máquina asesina debido a la rabia.",
+  description: "Cujo, pelicula dirigida por Lewis Teague y basada en la novela de Stephen King, es un thriller de terror que narra la historia de Cujo, un dócil perro San Bernardo que se convierte en una máquina asesina debido a la rabia. Cuando Cujo es mordido por un murciélago infectado, su personalidad cambia drásticamente, y se convierte en una amenaza mortal para una madre, su hijo y un mecánico que quedan atrapados en un coche averiado en la remota granja donde Cujo reside. La película es un escalofriante retrato del instinto animal y el terror psicológico.",
+  genre: "Terror",
+  imageUrl: "img/cujo.jpeg",
+  facts: {
+      yearOfRelease: 1983,
+      director: "Lewis Teague",
+      mainActors: ["Dee Wallace", "Danny Pintauro"],
+      basedOnBook: true
+  }
+},
 ]
