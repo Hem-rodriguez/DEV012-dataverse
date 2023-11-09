@@ -7,10 +7,16 @@ export const example = () => {
 export const anotherExample = () => {
   return [];
 };
+// dataFunctions.js
+
+// Función para calcular la estadística de películas de terror
 export const calcularEstadistica = (data, genero) => {
-  const peliculasDeGenero = data.filter((movie) => movie.genre === genero);
-  return peliculasDeGenero.length;
-}
+  const totalPeliculas = data
+    .map((pelicula) => (pelicula.genre === genero ? 1 : 0))
+    .reduce((total, count) => total + count, 0);
+  return totalPeliculas;
+};
+
 
 export function sortedMovies(data, ord){
   if (ord === 'asc') {

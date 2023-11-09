@@ -98,66 +98,46 @@ updateMovieList(data);*/
 
 import { renderItems } from './view.js';
 import data from './data/dataset.js';
-import { sortedMovies} from './dataFunctions.js'
+import { sortedMovies } from './dataFunctions.js';
+import { calcularEstadistica } from './dataFunctions.js';
 
-const root =
-document.querySelector('#root');
+const root = document.querySelector('#root');
 root.appendChild(renderItems(data));
 
 const selectFiltros = document.querySelector('#filtros');
 const selectOrdenamiento = document.querySelector('#ordenamiento');
 const buttonBorrar = document.querySelector('[data-testid="button-clear"]');
 
-// Agregar evento para filtrar por género
-selectFiltros.addEventListener('change', () => { 
-  // Cuando cambia la selección, esta función se ejecuta
-  root.innerHTML= ''
+selectFiltros.addEventListener('change', () => {
+  root.innerHTML = '';
   const selectedGenre = selectFiltros.value;
-  // Cuando el usuario selecciona una opción de género en la lista desplegable
-  // este código recoge el valor de esa opción y lo almacena en la variable selectedGenre
   const filteredMovies = data.filter(movie => movie.genre === selectedGenre);
-  //Se está filtrando el arreglo de películas data para obtener únicamente las películas que coinciden 
-  //con el género seleccionado por el usuario, almacenado en la variable selectedGenre.
-  root.appendChild (renderItems(filteredMovies));
-  //aqui el contenido de un elemento de mi página web con una nueva lista de películas que ha sido
-  // filtrada y formateada en HTML utilizando la función renderItems.
-  
+  root.appendChild(renderItems(filteredMovies));
 });
 
-// Agregar evento para ordenar
 selectOrdenamiento.addEventListener('change', () => {
-  root.innerHTML= ''
-  // change se dispara cuando el usuario selecciona una opción diferente en un elemento select
-  const orderType = selectOrdenamiento.value; 
-  //El valor seleccionado se almacena en la variable
-  // const sortedMovies = [...data];
-   //se crea una copia de data, y luego se ordena o filtra
-   //esta copia en función del tipo de ordenamiento (ascendente o descendente) o el género
-   // seleccionado por el usuario.El resultado de la operación se muestra en la página web sin alterar los datos originales
-   const dataSort = sortedMovies(data, orderType)
-
-    //a.name y b.name son las propiedades "name" de esos dos objetos.
-
-  root.appendChild (renderItems(dataSort));
+  root.innerHTML = '';
+  const orderType = selectOrdenamiento.value;
+  const dataSort = sortedMovies(data, orderType);
+  root.appendChild(renderItems(dataSort));
 });
-
-// Agregar evento para borrar
 
 buttonBorrar.addEventListener('click', () => {
-  root.innerHTML= ''
-
-  root.appendChild (renderItems(data));
-  buttonBorrar.selectedIndex = 0; 
+  root.innerHTML = '';
+  root.appendChild(renderItems(data));
 });
-import { calcularEstadistica } from './dataFunctions.js';
 
-// Supongamos que deseas calcular el número de películas de terror
-const genero = 'Terror';
-const numberOfHorrorMovies = calcularEstadistica(data, genero);
+// El código para calcular la estadística de películas de terror ya se encuentra en dataFunctions.js
+// Solo necesitas llamar a la función calcularEstadistica con tus datos y género "Terror".
+const generoTerror = 'Terror';
+const totalPeliculasDeTerror = calcularEstadistica(data, generoTerror);
 
-console.log(`Número de películas de Terror: ${numberOfHorrorMovies}`);
-const statisticElement = document.querySelector('#estadistica');
-statisticElement.textContent = `Número de películas de Terror: ${numberOfHorrorMovies}`;
+const estadisticaElement = document.getElementById('peliculasDeTerror');
+estadisticaElement.textContent = totalPeliculasDeTerror.toString();
+
+
+
+
 
 
 
