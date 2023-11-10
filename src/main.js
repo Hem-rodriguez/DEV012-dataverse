@@ -100,6 +100,7 @@ import { renderItems } from './view.js';
 import data from './data/dataset.js';
 import { sortedMovies } from './dataFunctions.js';
 import { calcularEstadistica } from './dataFunctions.js';
+import { filterMoviesByGenre } from './dataFunctions.js';
 
 const root = document.querySelector('#root');
 root.appendChild(renderItems(data));
@@ -111,7 +112,7 @@ const buttonBorrar = document.querySelector('[data-testid="button-clear"]');
 selectFiltros.addEventListener('change', () => {
   root.innerHTML = '';
   const selectedGenre = selectFiltros.value;
-  const filteredMovies = data.filter(movie => movie.genre === selectedGenre);
+  const filteredMovies = filterMoviesByGenre(data, selectedGenre); // Usa la función de filtrado
   root.appendChild(renderItems(filteredMovies));
 });
 
@@ -128,7 +129,7 @@ buttonBorrar.addEventListener('click', () => {
 });
 
 // El código para calcular la estadística de películas de terror ya se encuentra en dataFunctions.js
-// Solo necesitas llamar a la función calcularEstadistica con tus datos y género "Terror".
+ 
 const generoTerror = 'Terror';
 const totalPeliculasDeTerror = calcularEstadistica(data, generoTerror);
 

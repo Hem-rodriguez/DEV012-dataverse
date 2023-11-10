@@ -5,6 +5,7 @@ export const example = () => {
 };
 
 export const anotherExample = () => {
+
   return [];
 };
 // dataFunctions.js
@@ -17,6 +18,9 @@ export const calcularEstadistica = (data, genero) => {
   return totalPeliculas;
 };
 
+export function filterMoviesByGenre(data, selectedGenre) {
+  return data.filter(movie => movie.genre === selectedGenre);
+}
 
 export function sortedMovies(data, ord){
   if (ord === 'asc') {
