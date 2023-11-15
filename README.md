@@ -24,10 +24,7 @@ las usuarias, necesitamos entender y procesar estos datos. Una manera simple de
 hacerlo es creando _interfaces_ y _visualizaciones_.
 
 En la siguiente imagen, podrás ver cómo con la data que que se ve en la parte
-izquierda se puede construir una interfaz amigable y entendible por las
-usuarias, al lado derecho.
-
-![pokemon-data-to-ui](https://user-images.githubusercontent.com/12631491/218505816-c6d11758-9de4-428f-affb-2a56ea4d68c4.png)
+izquierda se puede construir una ui](-9de4-428f-affb-2a56ea4d68c4.png)
 
 ## 2. Resumen del proyecto
 
