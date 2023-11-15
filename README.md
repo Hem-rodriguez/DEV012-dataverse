@@ -2,10 +2,10 @@
 
 ## Índice
 
-* [1. Preámbulo](#1-preámbulo)
-* [2. Resumen del proyecto](#2-resumen-del-proyecto)
-* [3. Consideraciones generales](#3-consideraciones-generales)
-* [4. Funcionalidades](#4-funcionalidades)
+
+* [1. Resumen del proyecto]
+* [2. . historias de Usuario]
+* [3. Diseño de la Interfaz de Usuaria]
 *
 
 
@@ -18,7 +18,7 @@ necesita.
 
 
 
-## 4. historias de Usuario
+## 2. historias de Usuario
 Este proyecto se concideraron las necesidades de la usuaria y lo trabaje de esta manera:
 
 la usuaria podra entrar a la pagina web, y atraera la atencion de la atencion con la interfaz
