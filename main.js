@@ -1,100 +1,3 @@
-/*import { example } from './dataFunctions.js';
-import { renderItems } from './view.js';
-
-import data from './data/dataset.js';
-
-console.log(example, renderItems(data), data);
-
-const root =
-document.querySelector('#root');
-root.appendChild(renderItems(data));
-
-
-
-const selectFiltros = document.querySelector('#filtros');
-
-selectFiltros.addEventListener('change', () => {
-    const selectedGenre = selectFiltros.value; // Obtén el valor seleccionado del género
-    alert(`Filtrando películas por género: ${selectedGenre}`);
-});
-
-
-const selectOrdenamiento = document.querySelector('#ordenamiento');
-
-selectOrdenamiento.addEventListener('change', () => {
-    const selectValue = selectOrdenamiento.value; // Obtén el valor seleccionado del elemento select
-    alert(`Filtrando películas por ordenamiento: ${selectValue}`);
-});
-
-const buttonBorrar = document.querySelector('[data-testid="button-clear"]');
-
-buttonBorrar.addEventListener('click', () => {
-    // Aquí dentro puedes mostrar una alerta o un mensaje
-    alert('Borrando películas...');
-});
-
-selectFiltros.addEventListener('change', () => {
-    const selectedGenre = selectFiltros.value;
-  
-    // Filtrar las películas que coinciden con el género seleccionado
-    const peliculasFiltradas = data.filter(pelicula => pelicula.genre === selectedGenre);
-  
-    // Luego, renderiza las películas filtradas en tu página
-    const root = document.querySelector('#root');
-    root.innerHTML = renderItems(peliculasFiltradas);
-  });*/
-  
-  
-  
-/*import { example } from './dataFunctions.js';
-import { renderItems } from './view.js';
-
-import data from './data/dataset.js';
-
-console.log(example, renderItems(data), data);
-
-const selectFiltros = document.querySelector('#filtros');
-const selectOrdenamiento = document.querySelector('#ordenamiento');
-const buttonBorrar = document.querySelector('[data-testid="button-clear"]');
-const root = document.querySelector('#root');
-
-// Define una función para actualizar la lista de películas en #root
-const updateMovieList = (movies) => {
-  root.innerHTML = '';
-  const movieList = renderItems(movies);
-  root.appendChild(movieList);
-};
-
-// Lógica para filtrar películas por género
-selectFiltros.addEventListener('change', () => {
-  const selectedGenre = selectFiltros.value;
-  const peliculasFiltradas = data.filter((pelicula) => pelicula.genre === selectedGenre);
-  updateMovieList(peliculasFiltradas);
-});
-
-// Lógica para ordenar películas
-selectOrdenamiento.addEventListener('change', () => {
-  const selectValue = selectOrdenamiento.value;
-  const moviesCopy = [...data];
-  if (selectValue === 'asc') {
-    moviesCopy.sort((a, b) => a.name.localeCompare(b.name));
-  } else if (selectValue === 'desc') {
-    moviesCopy.sort((a, b) => b.name.localeCompare(a.name));
-  }
-  updateMovieList(moviesCopy);
-});
-
-// Lógica para borrar películas (aquí puedes mostrar una alerta)
-buttonBorrar.addEventListener('click', () => {
-  alert('Borrando películas...');
-  // Puedes realizar la lógica de borrado de películas aquí si es necesario
-});
-
-// Carga inicial de la lista de películas
-updateMovieList(data);*/
-
-  
-
 
 import { renderItems } from './view.js';
 import data from './data/dataset.js';
@@ -103,49 +6,67 @@ import { calcularEstadistica } from './dataFunctions.js';
 import { filterMoviesByGenre } from './dataFunctions.js';
 
 
-const root = document.querySelector('#root');
-root.appendChild(renderItems(data));
+const root = document.querySelector('#root'); 
+// se esta obteniendo el elemento que tiene id "root"
+//y almacena en la variable root.
+root.appendChild(renderItems(data)); 
+//el elemento que se va a agregar es el resultado de llamar a la funcion 
+//renderltems(data)
 
 
 const selectFiltros = document.querySelector('#filtros');
+// Selector para filtros
 const selectOrdenamiento = document.querySelector('#ordenamiento');
 const buttonBorrar = document.querySelector('[data-testid="button-clear"]');
+//selector de borrar
 
-// Función para restablecer valores predeterminados
-const resetSelects = () => {
-  selectFiltros.selectedIndex = 0; // Primer elemento en la lista de géneros
-  selectOrdenamiento.selectedIndex = 0; // Primer elemento en la lista de ordenamiento
-};
-
+//evento de cambio para selecctor de fitros
 selectFiltros.addEventListener('change', (evento) => {
+  
   console.log
-  root.innerHTML = '';
-  const selectedGenre = selectFiltros.value;
-  const filteredMovies = filterMoviesByGenre(data, selectedGenre); // Usa la función de filtrado
+  root.innerHTML = '';//limpiar el contenido del contenedor prin
+  const selectedGenre = selectFiltros.value;// Obtiene el género seleccionado del selector de filtros
+  const filteredMovies = filterMoviesByGenre(data, selectedGenre); 
+  // obtiene un nuevo arreglo de películas filtradas según el género seleccionado por el usuario. 
+  //El resultado, filteredMovies, contendrá únicamente las películas que coincidan con el género seleccionado.
+  //toma dos parametros data y selectedgenre
+
   root.appendChild(renderItems(filteredMovies));
+  // actualiza el contenido en la parte del DOM con el id root con las nuevas tarjetas de películas
+  // generadas a partir del arreglo filtrado (filteredMovies).
 });
 
+ // Evento de cambio para el selector de ordenamiento
 selectOrdenamiento.addEventListener('change', () => {
-  root.innerHTML = '';
+  root.innerHTML = ''; 
+  // Limpiar el contenido del contenedor principal
   const selectedGenre = selectFiltros.value;
-  // Utiliza la función sortedMovies para ordenar las películas filtradas
+  // primero filtramos las películas según el género seleccionado (selectedGenre) utilizando  función filterMoviesByGenre
+  
   const dataSort = sortedMovies(data, selectedGenre, selectOrdenamiento.value);
+  // Utiliza la función sortedMovies para ordenar las películas filtradas
   root.appendChild(renderItems(dataSort));
+  // Renderizar y agregar las películas ordenadas al contenedor principal
 });
 
 buttonBorrar.addEventListener('click', () => {
+  // Evento de clic para el botón de borrado
   root.innerHTML = '';
+  // Limpiar el contenido del contenedor principal
   root.appendChild(renderItems(data));
+  // Renderizar y agregar todas las películas al contenedor principal
 });
 
-// El código para calcular la estadística de películas de terror ya se encuentra en dataFunctions.js
- 
+// El código para calcular la estadística de películas de terror ya se encuentra en dataFunctions.js 
 const generoTerror = 'Terror';
 const totalPeliculasDeTerror = calcularEstadistica(data, generoTerror);
-
+// Calcular estadísticas para el género 'Terror'
 const estadisticaElement = document.getElementById('peliculasDeTerror');
+// está obteniendo el elemento del DOM con el identificador 'peliculasDeTerror' y 
+//asignándolo a la variable estadisticaElement.
 estadisticaElement.textContent = totalPeliculasDeTerror.toString();
-
+//  está actualizando el contenido del elemento de estadística en el DOM 
+//con el valor total de películas de terror, que se ha convertido a una cadena de texto.
 
 
 
