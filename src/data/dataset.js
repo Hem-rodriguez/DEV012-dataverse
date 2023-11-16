@@ -274,7 +274,7 @@ facts: {
   shortDescription: "Un hombre inocente lucha por su libertad en prisión.",
   description: "Basada en la novela de Stephen King, 'The Shawshank Redemption' es un drama carcelario que narra la historia de un hombre inocente que lucha por su libertad en prisión.",
   genre: "Drama",
-  imageUrl: "img/Shawshank.jpeg",
+  imageUrl: "img/shawshank.jpeg",
   facts: {
       yearOfRelease: "1994",
       director: "Frank Darabont",
@@ -302,7 +302,7 @@ facts: {
   shortDescription: "Los residentes de un pueblo enfrentan horrores sobrenaturales en medio de una misteriosa niebla.",
   description: "Basada en el relato corto de Stephen King, 'The Mist' es un thriller de terror que sigue a los residentes de un pueblo que enfrentan horrores sobrenaturales en medio de una misteriosa niebla.",
   genre: "Terror",
-  imageUrl: "img/TheMist.jpeg",
+  imageUrl: "img/themist.jpeg",
   facts: {
       yearOfRelease: "2007",
       director: "Frank Darabont",

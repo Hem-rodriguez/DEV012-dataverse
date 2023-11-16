@@ -1,18 +1,33 @@
-import { example, anotherExample } from '../src/dataFunctions.js';
+import { filterMoviesByGenre, sortedMovies } from '../src/dataFunctions.js';
 import { data as fakeData } from './data.js';
 
-console.log(fakeData);
+describe("Funciones de Filtrado y Ordenamiento", () => {
+  // Pruebas para la función de filtrado por género
+  describe("filterMoviesByGenre", () => {
+    it("Debería filtrar las películas por género 'Terror'", () => {
+      const peliculasTerror = filterMoviesByGenre(fakeData, "Terror");
+      expect(peliculasTerror.length).toBe(3);
+      // Puedes agregar más expectativas para verificar los resultados específicos
+      // de las películas de terror filtradas, si es necesario.
+    });
 
-describe('example', () => {
-
-  it('returns `example`', () => {
-    expect(example()).toBe('example');
+    // Agrega más pruebas para otros casos de uso de filterMoviesByGenre si es necesario.
   });
-});
 
-describe('anotherExample', () => {
+  // Pruebas para la función de ordenamiento
+  describe("sortedMovies", () => {
+    it("Debería ordenar las películas en orden ascendente", () => {
+      sortedMovies(fakeData, "asc");
+      // No estás utilizando la variable peliculasOrdenadasAsc, por lo que no es necesario asignarla.
+    });
 
-  it('returns `anotherExample`', () => {
-    expect(anotherExample()).toBe('OMG');
+    it("Debería ordenar las películas en orden descendente", () => {
+      sortedMovies(fakeData, "desc");
+      // No estás utilizando la variable peliculasOrdenadasDesc, por lo que no es necesario asignarla.
+    });
+
+    // Agrega más pruebas para otros casos de uso de sortedMovies si es necesario.
   });
+
+  // Puedes seguir agregando más describe e it bloques para cubrir diferentes escenarios y casos de uso.
 });

@@ -15,21 +15,27 @@ export const calcularEstadistica = (data, genero) => {
   const totalPeliculas = data
     .map((pelicula) => (pelicula.genre === genero ? 1 : 0))
     .reduce((total, count) => total + count, 0);
-  return totalPeliculas;
+  return Number (totalPeliculas);
 };
 
 export function filterMoviesByGenre(data, selectedGenre) {
   return data.filter(movie => movie.genre === selectedGenre);
 }
 
-export function sortedMovies(data, ord){
+export function sortedMovies(data, genero, ord) {
+  // Filtra las películas por género
+  const peliculasFiltradas = data.filter((movie) => movie.genre === genero);
+
   if (ord === 'asc') {
-   return data.sort((a, b) => a.name.localeCompare(b.name)); 
+    // Ordena las películas filtradas en orden ascendente
+    return peliculasFiltradas.sort((a, b) => a.name.localeCompare(b.name));
   } else if (ord === 'desc') {
-    return data.sort((a, b) => b.name.localeCompare(a.name));
-    //compara cadenas de texto 
-    //y devuelve un valor negativo si a.name es menor que b.name, un valor positivo 
-    //si es mayor y 0 si son iguales.Esto es lo que determina el orden en el que se deben colocar los elementos en el array.
+    // Ordena las películas filtradas en orden descendente
+    return peliculasFiltradas.sort((a, b) => b.name.localeCompare(a.name));
   }
-  return data
+
+  // Si no hay orden especificado, devuelve las películas filtradas sin ordenar
+  return peliculasFiltradas;
 }
+
+
